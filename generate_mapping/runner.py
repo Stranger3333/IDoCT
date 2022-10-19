@@ -213,7 +213,8 @@ class Runner:
 
 if __name__ == "__main__":
     s = time.time()
-    sys.argv.append("hadoop-common")
+    # sys.argv.append("hadoop-common")
+    sys.argv.append("rocketmq-common")
     usage = "usage: python3 runner.py project [options]"
     parser = OptionParser(usage=usage)
     parser.add_option("-a", action="store_true", dest="aggressive", default=False,
