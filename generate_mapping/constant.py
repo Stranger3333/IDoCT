@@ -14,7 +14,8 @@ MODULE_PATH = {
     "hadoop-hdfs": CTEST_HADOOP_DIR,
     "hbase-server": CTEST_HBASE_DIR,
     "alluxio-core": CTEST_ALLUXIO_DIR,
-    "rocketmq-common": CTEST_ROCKETMQ_DIR
+    "rocketmq-common": CTEST_ROCKETMQ_DIR,
+    "rocketmq-client": CTEST_ROCKETMQ_DIR
 }
 
 SRC_SUBDIR = {
@@ -23,7 +24,8 @@ SRC_SUBDIR = {
     "hbase-server": "hbase-server",
     "zookeeper-server": "zookeeper-server",
     "alluxio-core": "core",
-    "rocketmq-common": "common"
+    "rocketmq-common": "common",
+    "rocketmq-client": "client",
 }
 
 MVN_TEST_PATH = {
@@ -33,6 +35,7 @@ MVN_TEST_PATH = {
     "zookeeper-server": os.path.join(CTEST_ZOOKEEPER_DIR, SRC_SUBDIR["zookeeper-server"]),
     "alluxio-core": os.path.join(CTEST_ALLUXIO_DIR, SRC_SUBDIR["alluxio-core"]),
     "rocketmq-common": os.path.join(CTEST_ROCKETMQ_DIR, SRC_SUBDIR["rocketmq-common"]),
+    "rocketmq-client": os.path.join(CTEST_ROCKETMQ_DIR, SRC_SUBDIR["rocketmq-client"]),
 }
 
 LOCAL_CONF_PATH = {
@@ -42,6 +45,7 @@ LOCAL_CONF_PATH = {
     "zookeeper-server": "results/zookeeper-server/conf_params.txt",
     "alluxio-core": "results/alluxio-core/conf_params.txt",
     "rocketmq-common": "results/rocketmq-common/conf_params.txt",
+    "rocketmq-client": "results/rocketmq-client/conf_params.txt",
 }
 
 SUREFIRE_SUBDIR = "target/surefire-reports/*"
@@ -71,6 +75,9 @@ CTEST_SUREFIRE_PATH = {
     ],
     "rocketmq-common": [
         os.path.join(CTEST_ROCKETMQ_DIR, "rocketmq-common", SUREFIRE_SUBDIR)
+    ],
+    "rocketmq-client": [
+        os.path.join(CTEST_ROCKETMQ_DIR, "rocketmq-client", SUREFIRE_SUBDIR)
     ]
 }
 
@@ -94,5 +101,8 @@ LOCAL_SUREFIRE_PATH = {
     ],
     "rocketmq-common": [
         os.path.join("surefire-reports/rocketmq-common", LOCAL_SUREFIRE_SUFFIX)
+    ],
+    "rocketmq-client": [
+        os.path.join("surefire-reports/rocketmq-client", LOCAL_SUREFIRE_SUFFIX)
     ]
 }
