@@ -1,0 +1,581 @@
+{
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateConsumeMessageBackTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateErrorSecretKeyTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#getAccessAclYamlConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#checkPerm": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#updateAccessConfigEmptyPermListTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#testUpdateSpecifiedAclFileGlobalWhiteAddrsConfig": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#updateAccessAclYamlConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#loadTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessControlFlowTest#testBothAclFileAndFolderCase": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "globalWhiteAddrs",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#multiFilePathTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#addYamlConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#checkErrorPermDefaultValueNotMatch": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#addAccessAclYamlConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#isWatchStartTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#testValidateAfterUpdateAccessConfig": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateSendMessageToRetryTopicTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#deleteAccessAclToEmptyTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#createAclAccessConfigMapTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateNullAccessKeyTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#testWatch": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#deleteAccessConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#deleteAccessAclYamlConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#getAllAclFilesTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validatePullMessageTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#updateAccessConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessControlFlowTest#testOnlyAclFolderCase": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "globalWhiteAddrs",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#getAllAclConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "globalWhiteAddrs",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#accountNullTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#contentTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateQueryMessageTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateQueryMessageByKeyTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateForAdminCommandWithOutAclRPCHook": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#deleteAccessAnotherAclYamlConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#createAndUpdateAccessAclNullSkExceptionTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateSendMessageV2ToRetryTopicTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#cleanAuthenticationInfoTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#updateAccessAnotherAclYamlConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateUpdateConsumerOffSetTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#addAccessDefaultAclYamlConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#updateGlobalWhiteRemoteAddressesTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#accountThanTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#buildPlainAccessResourceTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateUnRegisterClientTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateGetAllTopicConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#passWordtNullTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateSendMessageV2Test": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#checkPermAdmin": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#updateAccessConfigEmptyWhiteRemoteAddressTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateSendMessageTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateGetConsumerListByGroupTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#updateGlobalWhiteAddrsConfigTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "globalWhiteAddrs",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#passWordThanTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessValidatorTest#validateHeartBeatTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainPermissionManagerTest#updateAclConfigFileVersionTest": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms"
+  ],
+  "org.apache.rocketmq.acl.plain.PlainAccessControlFlowTest#testEmptyAclFolderCase": [
+    "defaultGroupPerm",
+    "defaultTopicPerm",
+    "groupPerms",
+    "globalWhiteAddrs",
+    "accessKey",
+    "whiteRemoteAddress",
+    "secretKey",
+    "admin",
+    "topicPerms",
+    "plainAccessConfigs"
+  ]
+}
