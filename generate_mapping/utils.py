@@ -11,8 +11,10 @@ def get_local_surefire_report(module):
 def get_ctest_surefire_report(module):
     ret = []
     report_dirs = constant.CTEST_SUREFIRE_PATH[module]
-    for report_dir in report_dirs:
+    print(report_dirs)
+    for report_dir in report_dirs:      
         ret += glob.glob(report_dir)
+    print('ret',ret)
     return ret
 
 def get_default_params_from_file(module):

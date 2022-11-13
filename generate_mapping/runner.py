@@ -34,7 +34,10 @@ class Runner:
 
     def get_full_report_path(self, suffix):
         all_reports = utils.get_ctest_surefire_report(self.module)
+        print('all reports:',all_reports)
+        print('suffix',suffix)
         for report in all_reports:
+                print(report)
                 if report.endswith(suffix):
                     return report
         return "none"
@@ -188,6 +191,7 @@ class Runner:
                 continue
 
             class_name = method.split("#")[0]
+            print('class name',class_name)
             suffix_filename_to_check = class_name + "-output.txt"
             full_path = self.get_full_report_path(suffix_filename_to_check)
             if full_path == "none":
@@ -214,7 +218,7 @@ class Runner:
 if __name__ == "__main__":
     s = time.time()
     # sys.argv.append("hadoop-common")
-    sys.argv.append("rocketmq-common")
+    sys.argv.append("rocketmq-acl")
     usage = "usage: python3 runner.py project [options]"
     parser = OptionParser(usage=usage)
     parser.add_option("-a", action="store_true", dest="aggressive", default=False,

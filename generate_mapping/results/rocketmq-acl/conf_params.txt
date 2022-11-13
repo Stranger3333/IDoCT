@@ -181,3 +181,13 @@ scanNotActiveBrokerInterval
 unRegisterBrokerQueueCapacity
 supportActingMaster
 enableControllerInNamesrv
+globalWhiteAddrs
+plainAccessConfigs
+accessKey
+secretKey
+whiteRemoteAddress
+admin
+defaultTopicPerm
+defaultGroupPerm
+topicPerms
+groupPerms
