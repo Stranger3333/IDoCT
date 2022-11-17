@@ -74,10 +74,10 @@ CTEST_SUREFIRE_PATH = {
         os.path.join(CTEST_ALLUXIO_DIR, "core/server/master", SUREFIRE_SUBDIR)
     ],
     "rocketmq-common": [
-        os.path.join(CTEST_ROCKETMQ_DIR, "rocketmq-common", SUREFIRE_SUBDIR)
+        os.path.join(CTEST_ROCKETMQ_DIR, "common", SUREFIRE_SUBDIR)
     ],
     "rocketmq-client": [
-        os.path.join(CTEST_ROCKETMQ_DIR, "rocketmq-client", SUREFIRE_SUBDIR)
+        os.path.join(CTEST_ROCKETMQ_DIR, "client", SUREFIRE_SUBDIR)
     ]
 }
 
@@ -100,9 +100,9 @@ LOCAL_SUREFIRE_PATH = {
         os.path.join("surefire-reports/alluxio-core", LOCAL_SUREFIRE_SUFFIX)
     ],
     "rocketmq-common": [
-        os.path.join("surefire-reports/rocketmq-common", LOCAL_SUREFIRE_SUFFIX)
+        os.path.join("surefire-reports/common", LOCAL_SUREFIRE_SUFFIX)
     ],
     "rocketmq-client": [
-        os.path.join("surefire-reports/rocketmq-client", LOCAL_SUREFIRE_SUFFIX)
+        os.path.join("surefire-reports/client", LOCAL_SUREFIRE_SUFFIX)
     ]
 }

@@ -1,0 +1,1 @@
+["org.apache.rocketmq.client.ValidatorsTest#testTopicConfigValid", "org.apache.rocketmq.client.ValidatorsTest#testBrokerConfigValid", "org.apache.rocketmq.client.ValidatorsTest#testIsNotAllowedSendTopic", "org.apache.rocketmq.client.ValidatorsTest#testCheckTopic_Success"]
