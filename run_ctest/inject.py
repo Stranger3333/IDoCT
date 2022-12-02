@@ -38,14 +38,21 @@ def inject_config(param_value_pairs):
             file.write(str.encode("<?xml version=\"1.0\"?>\n<?xml-stylesheet type=\"text/xsl\" href=\"configuration.xsl\"?>\n"))
             file.write(ET.tostring(conf))
             file.close()
-    else if project in [ROCKETMQ]:
-        dict_global_addr = [{'globalWhiteRemoteAddresses':['10.10.103.*','192.168.0.*']},{'accounts':[]}]
+    elif project in [ROCKETMQ]:
+        dict_global_addr = [{'globalWhiteRemoteAddresses':['10.10.103.*','192.168.0.*']}]
+        
         # dict
+        acc = {'accounts':{}}
         for inject_path in INJECTION_PATH[project]:
             print(">>>>[ctest_core] injecting into file: {}".format(inject_path))
             file = open(inject_path, "w")
-            # for p, v in param_value_pairs.items():
-            yaml.dump(dict_global_addr, file)
+            
+            for p, v in param_value_pairs.items():
+                acc['accounts'][p] = v
+            
+            dict_global_addr.append(acc)
+            yaml.dump(dict_global_addr, file)   
+           
             file.close()
 
     else:
@@ -54,7 +61,7 @@ def inject_config(param_value_pairs):
 
 def clean_conf_file(project):
     print(">>>> cleaning injected configuration from file")
-    if project in [ZOOKEEPER, ALLUXIO]:
+    if project in [ZOOKEEPER, ALLUXIO,ROCKETMQ]:
         for inject_path in INJECTION_PATH[project]:
             file = open(inject_path, "w")
             file.write("\n")
