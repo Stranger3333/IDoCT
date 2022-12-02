@@ -12,18 +12,22 @@ HDFS = "hadoop-hdfs"
 HBASE = "hbase-server"
 ZOOKEEPER = "zookeeper-server"
 ALLUXIO = "alluxio-core"
+# ROCKETMQ
+ROCKETMQ = "rocketmq/acl"
 
 CTEST_HADOOP_DIR = os.path.join(APP_DIR, "hadoop")
 CTEST_HBASE_DIR = os.path.join(APP_DIR, "ctest-hbase")
 CTEST_ZK_DIR = os.path.join(APP_DIR, "ctest-zookeeper")
 CTEST_ALLUXIO_DIR = os.path.join(APP_DIR, "ctest-alluxio")
-
+# rocketmq
+CTEST_ROCKETMQ_DIR = os.path.join(APP_DIR, "rocketmq/acl")
 PROJECT_DIR = {
     HCOMMON: CTEST_HADOOP_DIR,
     HDFS: CTEST_HADOOP_DIR,
     HBASE: CTEST_HBASE_DIR,
     ZOOKEEPER: CTEST_ZK_DIR,
     ALLUXIO: CTEST_ALLUXIO_DIR,
+    ROCKETMQ: CTEST_ROCKETMQ_DIR
 }
 
 
@@ -34,6 +38,7 @@ MODULE_SUBDIR = {
     HBASE: "hbase-server",
     ZOOKEEPER: "zookeeper-server",
     ALLUXIO: "core",
+    ACL: "acl"
 }
 
 
@@ -58,6 +63,7 @@ SUREFIRE_DIR = {
         os.path.join(CTEST_ALLUXIO_DIR, MODULE_SUBDIR[ALLUXIO], "server/worker", SUREFIRE_SUBDIR),
         os.path.join(CTEST_ALLUXIO_DIR, MODULE_SUBDIR[ALLUXIO], "server/master", SUREFIRE_SUBDIR),
     ],
+    ROCKETMQ: [os.path.join(CTEST_ROCKETMQ_DIR, MODULE_SUBDIR[ACL], SUREFIRE_SUBDIR)]
 }
 
 # default or deprecate conf path
@@ -75,6 +81,7 @@ DEFAULT_CONF_FILE = {
     HBASE: os.path.join(DEFAULT_CONF_DIR, HBASE + "-default.tsv"),
     ALLUXIO: os.path.join(DEFAULT_CONF_DIR, ALLUXIO + "-default.tsv"),
     ZOOKEEPER: os.path.join(DEFAULT_CONF_DIR, ZOOKEEPER + "-default.tsv")
+    ROCKETMQ: os.path.join(DEFAULT_CONF_DIR, ROCKETMQ + "-default.tsv")
 }
 
 
@@ -96,6 +103,9 @@ INJECTION_PATH = {
     ],
     ALLUXIO: [
         os.path.join(CTEST_ALLUXIO_DIR, "core/alluxio-ctest.properties")
+    ]
+    ROCKETMQ: [
+        os.path.join(CTEST_ROCKETMQ_DIR, "acl/ctest.yml")
     ]
 }
 

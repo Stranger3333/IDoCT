@@ -8,6 +8,9 @@ from ctest_const import *
 
 from program_input import p_input
 
+# FOR ROCKETMQ
+import yaml
+
 project = p_input["project"]
 
 def inject_config(param_value_pairs):
@@ -35,6 +38,16 @@ def inject_config(param_value_pairs):
             file.write(str.encode("<?xml version=\"1.0\"?>\n<?xml-stylesheet type=\"text/xsl\" href=\"configuration.xsl\"?>\n"))
             file.write(ET.tostring(conf))
             file.close()
+    else if project in [ROCKETMQ]:
+        dict_global_addr = [{'globalWhiteRemoteAddresses':['10.10.103.*','192.168.0.*']},{'accounts':[]}]
+        # dict
+        for inject_path in INJECTION_PATH[project]:
+            print(">>>>[ctest_core] injecting into file: {}".format(inject_path))
+            file = open(inject_path, "w")
+            # for p, v in param_value_pairs.items():
+            yaml.dump(dict_global_addr, file)
+            file.close()
+
     else:
         sys.exit(">>>>[ctest_core] value injection for {} is not supported yet".format(project))
 
