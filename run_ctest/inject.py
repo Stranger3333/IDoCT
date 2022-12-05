@@ -39,20 +39,38 @@ def inject_config(param_value_pairs):
             file.write(ET.tostring(conf))
             file.close()
     elif project in [ROCKETMQ]:
-        dict_global_addr = [{'globalWhiteRemoteAddresses':['10.10.103.*','192.168.0.*']}]
         
+        # file.write('globalWhiteRemoteAddresses:')
+        # file.write('  - ')
         # dict
         acc = {'accounts':{}}
+        
+        
         for inject_path in INJECTION_PATH[project]:
             print(">>>>[ctest_core] injecting into file: {}".format(inject_path))
             file = open(inject_path, "w")
-            
+            dict_global_addr = {'globalWhiteRemoteAddresses':['10.10.104.*','192.168.0.*']}
+            # {"accessKey":"rocketmq2","secretKey":12345678,"whiteRemoteAddress":"192.168.1.*","admin":True}
+            dict_accounts = {'accounts':[{"accessKey":"rocketmq","secretKey":1234567,"whiteRemoteAddress":"192.168.0.*","admin":False}]}
+            # dict_accounts = {'accounts':[]}
+            yaml.dump(dict_global_addr, file)
+  
             for p, v in param_value_pairs.items():
-                acc['accounts'][p] = v
-            
-            dict_global_addr.append(acc)
-            yaml.dump(dict_global_addr, file)   
-           
+                if dict_accounts['accounts'][0].__contains__(p):
+                    if v == 'true':
+                        v = True
+                    elif v == 'false':
+                        v = False 
+                    dict_accounts['accounts'][0][p] = v
+                else:
+                    if p in ['defaultTopicPerm', 'defaultGroupPerm']:
+                        dict_accounts['accounts'][0][p] = v
+                    elif p in ['topicPerms', 'groupPerms']:
+                        dict_accounts['accounts'][0][p] = []
+                        dict_accounts['accounts'][0][p].append(v)
+            # dict_global_addr.append(acc)
+            # acc_cnt = acc_cnt + 1 
+            yaml.dump(dict_accounts, file)
             file.close()
 
     else:
@@ -61,7 +79,7 @@ def inject_config(param_value_pairs):
 
 def clean_conf_file(project):
     print(">>>> cleaning injected configuration from file")
-    if project in [ZOOKEEPER, ALLUXIO,ROCKETMQ]:
+    if project in [ZOOKEEPER, ALLUXIO, ROCKETMQ]:
         for inject_path in INJECTION_PATH[project]:
             file = open(inject_path, "w")
             file.write("\n")

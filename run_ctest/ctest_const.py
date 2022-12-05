@@ -105,7 +105,8 @@ INJECTION_PATH = {
         os.path.join(CTEST_ALLUXIO_DIR, "core/alluxio-ctest.properties")
     ],
     ROCKETMQ: [
-        os.path.join(CTEST_ROCKETMQ_DIR, "acl/ctest.yml")
+        os.path.join(CTEST_ROCKETMQ_DIR, "acl/src/test/resources/conf/ctest.yml"),
+        os.path.join(CTEST_ROCKETMQ_DIR, "acl/src/test/resources/conf/acl/ctest.yml")
     ]
 }
 
