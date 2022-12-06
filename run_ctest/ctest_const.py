@@ -106,7 +106,7 @@ INJECTION_PATH = {
     ],
     ROCKETMQ: [
         os.path.join(CTEST_ROCKETMQ_DIR, "acl/src/test/resources/conf/ctest.yml"),
-        os.path.join(CTEST_ROCKETMQ_DIR, "acl/src/test/resources/conf/acl/ctest.yml")
+        # os.path.join(CTEST_ROCKETMQ_DIR, "acl/src/test/resources/conf/acl/ctest.yml")
     ]
 }
 
