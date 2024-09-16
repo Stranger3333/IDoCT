@@ -1,0 +1,14 @@
+{
+  "org.apache.rocketmq.client.ValidatorsTest#testTopicConfigValid": [
+    "perm"
+  ],
+  "org.apache.rocketmq.client.ValidatorsTest#testBrokerConfigValid": [
+    "perm"
+  ],
+  "org.apache.rocketmq.client.ValidatorsTest#testIsNotAllowedSendTopic": [
+    "perm"
+  ],
+  "org.apache.rocketmq.client.ValidatorsTest#testCheckTopic_Success": [
+    "perm"
+  ]
+}
